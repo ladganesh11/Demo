@@ -8,6 +8,9 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.scp.Ecart.AlreadyLogin;
 import com.scp.Ecart.EcartLoginPo;
+
+import ToolsqaPrticeForm.PraticeForm;
+
 import com.scp.Ecart.AlreadyLogin;
 
 public class DriverIntialization {
@@ -30,6 +33,15 @@ public class DriverIntialization {
 
 		return PageFactory.initElements(driver,AlreadyLogin.class );
 
+	}
+	public static PraticeForm Launch()
+	{
+		WebDriver driver = new FirefoxDriver();
+		driver.get(AppConst.Applink);
+		driver.manage().window().maximize();
+		return PageFactory.initElements(driver, PraticeForm.class);
+		
+		
 	}
 	/*
 	public static WebDriver  AllBrowser(String WebBrowser,String url){
