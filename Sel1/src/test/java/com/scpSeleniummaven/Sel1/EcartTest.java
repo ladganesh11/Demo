@@ -17,9 +17,12 @@ public class EcartTest {
 		ecp.Login("ladganesh11@gmail.com");
 		AlreadyLogin al =  DriverIntialization.BrowserLaunc();
 		al.AlreadyRegister("ladganesh11@gmail.com", "ganesh1188");
-		//PraticeForm pp = DriverIntialization.Launch();
-		//pp.FillForm("ganesh", "lad");
-		//pp.SelectGender("male");
+		PraticeForm pp = DriverIntialization.Launch();
+		pp.FillForm("ganesh", "lad");
+		pp.SelectGender("Male");
+		
+		pp.CountExp("5");
+		
 
 	}
 
