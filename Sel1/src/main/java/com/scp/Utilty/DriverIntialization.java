@@ -8,7 +8,9 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.scp.Ecart.AlreadyLogin;
 import com.scp.Ecart.EcartLoginPo;
+import com.scp.toolsqaRegistrationForm.Registration;
 
+import DemoGurruBankingDomain.RegisterBankPo;
 import ToolsqaPrticeForm.PraticeForm;
 
 import com.scp.Ecart.AlreadyLogin;
@@ -43,6 +45,23 @@ public class DriverIntialization {
 		
 		
 	}
+	public static Registration browser ()
+	{
+		WebDriver driver =new FirefoxDriver();
+		driver.get(AppConst.PRATICE_URL);
+		driver.manage().window().maximize();
+		
+		return PageFactory.initElements(driver, Registration.class);
+		
+	}
+	public static RegisterBankPo launch()
+	{
+	WebDriver driver = new FirefoxDriver();
+	driver.get(AppConst.GURUDEMO_URL);
+	driver.manage().window().maximize();
+	return PageFactory.initElements(driver, RegisterBankPo.class);
+	}
+	
 	/*
 	public static WebDriver  AllBrowser(String WebBrowser,String url){
 		WebDriver driver ;

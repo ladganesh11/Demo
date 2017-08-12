@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.scpSeleniummaven.Sel1.EcartTest">
+      <class name="com.scpSeleniummaven.Sel1.GurruBank">
         <methods>
-          <include name="CreateAccount"/>
+          <include name="GuruBank"/>
         </methods>
-      </class> <!-- com.scpSeleniummaven.Sel1.EcartTest -->
+      </class> <!-- com.scpSeleniummaven.Sel1.GurruBank -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
